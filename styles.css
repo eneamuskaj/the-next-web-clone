@@ -136,7 +136,7 @@ img {
       "article4 article4 article5 article5";
   }
 
-  .section2 {
+  .section2div {
     flex-direction: column;
   }
   .section3 {
@@ -156,8 +156,14 @@ img {
 }
 
 @media screen and (max-width: 766px) {
+  .section1 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
   .section1 > * {
     height: 100%;
+    flex: none;
   }
   .section3 {
     grid-template-columns: 1fr;
