@@ -37,17 +37,18 @@
 }
 
 /* section 2 styling***************************************** */
-.section2 {
+
+.section2div {
   display: flex;
   gap: 10px;
   justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  margin: 3% 10%;
 }
-.section2 > * {
+.section2div > * {
   flex-grow: 1;
-  align-self: center;
-  background-color: darkblue;
+}
+.section2 > p {
+  text-align: center;
 }
 
 /* section 3 styling******************************************* */
@@ -71,8 +72,15 @@
   align-self: center;
 }
 
+/* section 5 styling **************************************** */
 .section5 {
-  display: flex;
+  width: 0 100%;
+}
+
+.section5 > .article1 {
+  background-image: url("pictures/9.png");
+  background-position: center;
+  background-size: auto;
 }
 
 /* section 6 syling********************************************* */
@@ -80,6 +88,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 10px;
+  margin: 0 13%;
 }
 
 .aside1 {
@@ -90,15 +99,8 @@
 
 /* section 7 styling *************************************** */
 .section7 {
-  background-color: rgb(54, 85, 61);
   display: flex;
   gap: 10px;
-}
-.section7 > article {
-  background-color: darkseagreen;
-}
-.section7 > aside {
-  background-color: rgb(10, 128, 10);
 }
 
 /* section 8 styling *********************************** */
@@ -108,13 +110,8 @@
   grid-gap: 10px;
 }
 
-.navbar {
-  background-color: bisque;
-}
-
 /* footer styling *************************************** */
 .footer {
-  background-color: blueviolet;
   display: flex;
 }
 .footer1 {
@@ -168,7 +165,6 @@ img {
   }
 
   .section6 {
-    background-color: rgb(255, 103, 134);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
