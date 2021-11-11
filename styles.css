@@ -1,0 +1,60 @@
+.container {
+  background-color: cadetblue;
+  height: 200vh;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+.main {
+  height: 100%;
+  background-color: coral;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "section1 aside"
+    "section2 section2"
+    "section3 section3"
+    "section4 section4"
+    "section5 section5"
+    "section6 section6"
+    "section7 section7";
+}
+.section1 {
+  grid-area: section1;
+  background-color: crimson;
+}
+.section2 {
+  grid-area: section2;
+  background-color: rgb(122, 60, 73);
+}
+.section3 {
+  grid-area: section3;
+  background-color: rgb(119, 10, 32);
+}
+.section4 {
+  grid-area: section4;
+  background-color: rgb(80, 61, 64);
+}
+.section5 {
+  grid-area: section5;
+  background-color: rgb(104, 15, 33);
+}
+.section6 {
+  grid-area: section6;
+  background-color: rgb(255, 103, 134);
+}
+.section7 {
+  grid-area: section7;
+  background-color: rgb(134, 0, 27);
+}
+.aside {
+  grid-area: aside;
+  background-color: rgb(95, 1, 20);
+}
+
+.navbar {
+  background-color: bisque;
+}
+.footer {
+  background-color: blueviolet;
+}
