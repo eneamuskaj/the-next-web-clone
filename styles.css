@@ -2,54 +2,126 @@
   background-color: cadetblue;
   height: 200vh;
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 20fr 1fr;
 }
 
 .main {
   height: 100%;
-  background-color: coral;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "section1 aside"
-    "section2 section2"
-    "section3 section3"
-    "section4 section4"
-    "section5 section5"
-    "section6 section6"
-    "section7 section7";
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
 }
+
+/* section 1 styling**************************************** */
 .section1 {
-  grid-area: section1;
   background-color: crimson;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "article1 article1 article2 article3"
+    "article1 article1 article2 article3"
+    "article1 article1 article5 article5"
+    "article4 article4 article5 article5";
 }
+
+.section1 > .article1 {
+  background-color: cyan;
+  grid-area: article1;
+}
+.section1 > .article2 {
+  background-color: rgb(105, 145, 145);
+  grid-area: article2;
+}
+.section1 > .article3 {
+  background-color: rgb(0, 121, 121);
+  grid-area: article3;
+}
+.section1 > .article4 {
+  background-color: rgb(24, 83, 83);
+  grid-area: article4;
+}
+.section1 > .article5 {
+  background-color: rgb(29, 51, 51);
+  grid-area: article5;
+}
+
+/* section 2 styling***************************************** */
 .section2 {
-  grid-area: section2;
   background-color: rgb(122, 60, 73);
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
+.section2 > * {
+  flex-grow: 1;
+  align-self: center;
+  background-color: darkblue;
+}
+
+/* section 3 styling******************************************* */
 .section3 {
-  grid-area: section3;
   background-color: rgb(119, 10, 32);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
+
+.section3 > * {
+  background-color: darkolivegreen;
+}
+
+/* section4 styling ***************************************** */
 .section4 {
-  grid-area: section4;
   background-color: rgb(80, 61, 64);
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
+.section4 > * {
+  flex-grow: 1;
+  align-self: center;
+  background-color: darksalmon;
+}
+
 .section5 {
-  grid-area: section5;
   background-color: rgb(104, 15, 33);
 }
+
+/* section 6 syling********************************************* */
 .section6 {
-  grid-area: section6;
   background-color: rgb(255, 103, 134);
+  display: flex;
+  gap: 10px;
 }
+.section6 > article {
+  background-color: darkseagreen;
+  width: 60%;
+}
+.section6 > aside {
+  background-color: rgb(10, 128, 10);
+  width: 40%;
+}
+
+/* section 7 styling *************************************** */
 .section7 {
-  grid-area: section7;
-  background-color: rgb(134, 0, 27);
+  background-color: rgb(54, 85, 61);
+  display: flex;
+  gap: 10px;
 }
-.aside {
-  grid-area: aside;
-  background-color: rgb(95, 1, 20);
+.section7 > article {
+  background-color: darkseagreen;
+  width: 60%;
+}
+.section7 > aside {
+  background-color: rgb(10, 128, 10);
+  width: 40%;
 }
 
 .navbar {
