@@ -37,6 +37,20 @@
   grid-area: article5;
 }
 
+.ptag {
+  position: absolute;
+  bottom: 1%;
+
+  font-size: 1.2rem;
+}
+
+.section1 > * {
+  position: relative;
+  color: white;
+
+  font-weight: 700;
+}
+
 /* section 2 styling***************************************** */
 
 .section2div {
@@ -147,6 +161,7 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
 /* media queries */
 
 @media screen and (max-width: 1024px) {
