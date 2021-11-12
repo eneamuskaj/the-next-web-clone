@@ -5,4 +5,4 @@ Ive used media queries to degrade their site as the window size is reduced.
 Project created for the Odin Project.
 
 Original Website: https://thenextweb.com/
-LIve Version: https://eneamuskaj.github.io/the-next-web-clone/
+Live Version: https://eneamuskaj.github.io/the-next-web-clone/
