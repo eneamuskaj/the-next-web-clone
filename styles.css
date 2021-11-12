@@ -6,6 +6,7 @@
 .main {
   display: grid;
   grid-gap: 30px;
+  margin: 0 2%;
 }
 
 /* section 1 styling**************************************** */
@@ -99,8 +100,29 @@
 
 /* section 7 styling *************************************** */
 .section7 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 13%;
+}
+
+.aside2 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aside2 > * {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 20px;
+}
+.imgdiv > * {
+  height: 100%;
+  position: absolute;
+  object-fit: fill;
 }
 
 /* section 8 styling *********************************** */
@@ -183,19 +205,12 @@ img {
     flex: 1;
     width: 100%;
   }
+
   .section7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
-  .section7 > article {
-    flex: 1;
-    width: 100%;
-  }
-  .section7 > aside {
-    flex: 3;
-    width: 100%;
-  }
+
   .section8 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
